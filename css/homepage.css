@@ -304,12 +304,17 @@ a:hover {
 .research-summary {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0;
 }
 
 .research-vision,
 .research-goal {
   max-width: 38rem;
+}
+
+/* 段间距统一由这里控制（引文块折叠时不占布局高度，只留 4px 视觉余量） */
+.research-goal {
+  margin-top: 0.5rem;
 }
 
 .research-goal__marker {
